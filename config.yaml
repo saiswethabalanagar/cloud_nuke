@@ -1,0 +1,4 @@
+regions:
+  - us-east-2
+resource_types:
+  - "*"
