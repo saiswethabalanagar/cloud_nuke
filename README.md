@@ -1,21 +1,9 @@
 # cloud_nuke
-To install cloud-nuke, you can try the following steps:
+Create a Config File: Create a configuration file for Cloud-nuke to specify the regions and resource types you want to delete. Here's an example configuration file (cloud-nuke-config.yml) that targets resources in us-east-2:
 
-Install via GitHub:
-
-bash
+yaml
 Copy code
-pip install git+https://github.com/gruntwork-io/cloud-nuke.git
-Clone and Install from Source:
-
-bash
-Copy code
-git clone https://github.com/gruntwork-io/cloud-nuke.git
-cd cloud-nuke
-pip install .
-Use Docker Image:
-If you're unable to install cloud-nuke directly, you can use the official Docker image:
-
-bash
-Copy code
-docker run -it --rm -v ~/.aws:/root/.aws gruntwork/cloud-nuke --help
+regions:
+  - us-east-2
+resource_types:
+  - "*"
