@@ -7,3 +7,8 @@ regions:
   - us-east-2
 resource_types:
   - "*"
+Install cloud-nuke
+https://github.com/gruntwork-io/cloud-nuke/releases
+
+command
+.\cloud-nuke_windows_amd64.exe aws --region us-east-2
